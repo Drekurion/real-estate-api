@@ -1,6 +1,8 @@
 package pl.drekurion.realestateapi.estate;
 
 import lombok.*;
+import pl.drekurion.realestateapi.estate.enums.EstateType;
+import pl.drekurion.realestateapi.estate.enums.OfferType;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -36,12 +38,12 @@ public class Estate
     private String number;
 
     @Column(nullable = false)
-    private Float area;
+    private BigDecimal area;
 
     @Column(nullable = false)
     private BigDecimal price;
 
-    public Estate(OfferType offerType, EstateType estateType, String number, Float area, BigDecimal price)
+    public Estate(OfferType offerType, EstateType estateType, String number, BigDecimal area, BigDecimal price)
     {
         this.offerType = offerType;
         this.estateType = estateType;

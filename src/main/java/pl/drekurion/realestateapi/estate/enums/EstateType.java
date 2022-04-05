@@ -1,4 +1,4 @@
-package pl.drekurion.realestateapi.estate;
+package pl.drekurion.realestateapi.estate.enums;
 
 public enum EstateType
 {
